@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>F&S Highlights</title>
+<style>
+body{
+background-color: #474e5d;
+font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+float: right;
+list-style-type: none;
+margin-bottom: 75px;
+}
+ul li{
+display: inline-block;
+}
+ul li a{
+text-decoration: none;
+color: #000;
+padding: 5px 20px;
+border: 1px solid #000;
+transition: 0.6s ease;
+}
+ul li a:hover{
+background-color: #fff;
+color: #000;
+}
+ul li.active a{
+background-color: #fff;
+color: #000;
+}
+*{
+box-sizing: border-box;
+}
+input[type=text], select, textarea{
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+input[type=submit]{
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+}
+input[type=submit]:hover{
+background-color: #45a049;
+}
+.container{
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 10px;
+}
+.column{
+float: left;
+width: 50%;
+margin-top: 6px;
+padding: 20px;
+}
+@media screen and (max-width: 600px){
+.column, input[type=submit]{
+width: 100%;
+margin-top: 0;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="Services.html">Services</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="About.html">About</a></li>
+<li class="active"><a href="Contact.html">Contact</a></li>
+</ul>
+<h2>Responsive Contact Section</h2>
+<p>We hope you liked our website and do please support us through sending us your thoughts and comments.</p>
+<div class="container">
+<div style="text-align:center">
+<h2>Contact Us</h2>
+<p>Swing by for some treats, or leave us a message:</p>
+</div>
+<div class="column">
+<img src="Quote.png" style="width:100%">
+</div>
+<div class="column">
+<form action="/action_page.php">
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="firstname" placeholder="Your name..">
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<label for="country">Country</label>
+<select id="country" name="country">
+<option value="philippines">Philippines</option>
+<option value="singapore">Singapore</option>
+<option value="usa">USA</option>
+</select>
+<label for="subject">Subject</label>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+<input type="submit" value="Submit">
+</form>
+</div>
+</header>
+</body>
+</html>
